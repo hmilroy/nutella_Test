@@ -1,0 +1,25 @@
+{
+  "name": "nutella",
+  "version": "1.0.0",
+  "description": "Nutella is the code name for :Different's front-end test automation framework built on top of [cypress.io](https://example.cypress.io/). The goal of Nutella is to provide QA engineers a test script writing experience that is as close to writing English as possible.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open",
+    "server": "http-server ./sample-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DifferentTech/nutella.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DifferentTech/nutella/issues"
+  },
+  "homepage": "https://github.com/DifferentTech/nutella#readme",
+  "devDependencies": {
+    "cypress": "^6.2.1",
+    "http-server": "^0.12.3"
+  }
+}
