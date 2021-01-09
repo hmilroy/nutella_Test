@@ -9,13 +9,19 @@ describe("Different Test suite",function(){
     region: "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(6) > div > div > div.col-xs-6.countrySelect__wrapper > select",
     add_new_email: "[class='search-input__notfound__text']",
     owner_name: "[name='name']",
-    add_property_save_button: "[class='button button_main']"
+    add_property_save_button: "[class='button button_main']",
+    unitnumber:"input[class='col-xs formInput formInput--last']",
+    number: "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(2) > div > div > input:nth-child(1)",
+    suburb: "input[name='suburb']",
+    postcode: "input[name='postCode']",
+    email: ".email-validation input[name=\"Search-Input\"]",
+
   };
 
   beforeEach("Load", function()
   {
-      cy.fixture("createpropertydata").then((data)=>{
-          this.key = data
+      cy.fixture("data").then((data)=>{
+          this.key = data.excel.data.propertyData.sheet1[1];
           
         })
   })
@@ -34,14 +40,14 @@ describe("Different Test suite",function(){
     cy.get(map.region).select("Queensland");
       
     cy.get("form").within(($form) => {
-      cy.get("input").first().type(this.key.number1);
+      cy.get(map.unitnumber).type(this.key.number1);
       cy.get("input").eq(1).type(this.key.number2);
       cy.get("input").eq(2).type(this.key.number3);
       cy.get("input").eq(3).type(this.key.property_name);
       cy.get("[name='streetType']").select("Road");
-      cy.get("input").eq(4).type(this.key.suburb);
-      cy.get("input").eq(5).type(this.key.postcode);
-      cy.get("input").eq(6).type(this.key.owner_email);
+      cy.get(map.suburb).type(this.key.suburb);
+      cy.get(map.postcode).type(this.key.postcode);
+      cy.get(map.email).type(this.key.owner_email);
       cy.get(map.add_new_email).click();
       cy.get(map.owner_name).type(this.key.owner_name1);
       cy.get(map.add_property_save_button).click();

@@ -1,0 +1,30 @@
+{
+  "excel": {
+    "data": {
+      "propertyData": {
+        "sheet1": [
+          {
+            "number1": 10,
+            "number2": 20,
+            "number3": 40,
+            "property_name": "Cypress automation property",
+            "suburb": "Cypress suburb",
+            "postcode": 5008,
+            "owner_email": "h.milroyperera+press02@gmail.com",
+            "owner_name1": "Test Auto Owner"
+          },
+          {
+            "number1": 445,
+            "number2": 20,
+            "number3": 40,
+            "property_name": "Cypress automation property",
+            "suburb": "Cypress suburb",
+            "postcode": 5008,
+            "owner_email": "h.milroyperera+press02@gmail.com",
+            "owner_name1": "Test Auto Owner"
+          }
+        ]
+      }
+    }
+  }
+}
