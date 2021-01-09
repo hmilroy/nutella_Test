@@ -42,10 +42,10 @@ define('sample', () => {
 Here the sample app HTML looks like this:
 
 ```html
-    <!-- sample-app/index.html -->
-    <input type="text" data-test="sample-input" placeholder="Sample Input" />
-    <button data-test="sample-button">Sample Button</button>
-    <div data-test="sample-output">Sample output</div>
+  <!-- sample-app/index.html -->
+  <input type="text" data-test="sample-input" placeholder="Sample Input" />
+  <button data-test="sample-button">Sample Button</button>
+  <div data-test="sample-output">Sample output</div>
 ```
 
 
