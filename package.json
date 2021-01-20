@@ -4,7 +4,7 @@
   "description": "Nutella is the code name for :Different's front-end test automation framework built on top of [cypress.io](https://example.cypress.io/). The goal of Nutella is to provide QA engineers a test script writing experience that is as close to writing English as possible.",
   "main": "index.js",
   "scripts": {
-    "load-data": "rm -rf ./cypress/fixtures/data.json && node node_modules/excel-data-loader/index.js excel-folder-path=./data json-file-path=./cypress/fixtures/data.json",
+    "load-data": "rm -rf ./cypress/fixtures/data.json && node node_modules/excel-data-loader/index.js excel-folder-path=./cypress/data json-file-path=./cypress/fixtures/data.json",
     "start": "npm run load-data && cypress open",
     "server": "http-server ./sample-app"
   },
@@ -21,17 +21,12 @@
   "homepage": "https://github.com/DifferentTech/nutella#readme",
   "devDependencies": {
     "cypress": "^6.2.1",
+    "cypress-file-upload": "^4.1.1",
     "cypress-xpath": "^1.6.1",
     "http-server": "^0.12.3"
   },
   "dependencies": {
-    "excel-data-loader": "github:hmilroy/excel-data-loader",
-    "fs": "0.0.1-security",
-    "memory-cache": "^0.2.0",
-    "path": "^0.12.7",
-    "set-value": "^3.0.2",
-    "underscore": "^1.12.0",
-    "underscore.string": "^3.3.5",
+    "excel-data-loader": "github:DifferentTech/excel-data-loader",
     "xlsx": "^0.16.9"
   }
 }

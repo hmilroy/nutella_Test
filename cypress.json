@@ -4,6 +4,9 @@
   "watchForFileChanges": true,
   "fixturesFolder": "cypress/fixtures",
   "testFiles": "**/*.spec.*",
-  "screenshotOnRunFailure": false
-}
+  "screenshotOnRunFailure": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
+  
+ }
 

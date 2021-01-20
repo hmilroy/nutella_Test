@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input type="number" data-test="left" /> +
+    <input type="number" data-test="right" />
+    <button data-test="equals">=</button>
+    <div data-test="output"></div>
+  </body>
+
+  <script>
+    e('equals').addEventListener('click', () => {
+      let lhs = parseInt(e('left').value);
+      let rhs = parseInt(e('right').value);
+      e('output').innerHTML = lhs + rhs;
+    });
+
+    // utilities
+    function e(name) {
+      return document.body.querySelector(`[data-test="${name}"]`)
+    }
+  </script>
+</html>

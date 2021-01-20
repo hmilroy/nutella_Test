@@ -13,12 +13,13 @@ describe("Different Test suite", function () {
     postcode: "input[name='postCode']",
     email: '.email-validation input[name="Search-Input"]',
     street: "[class='col-xs formInput formInput--first']",
+    
   };
 
   for (let i = 0; i < 5; i++) {
     beforeEach("Load", function () {
       cy.fixture("data").then((data) => {
-        this.key = data.excel.data.propertyData.sheet1[i];
+        this.key = data.excel.cypress.data.propertyData.sheet1[i];
       });
     });
 
@@ -51,4 +52,3 @@ describe("Different Test suite", function () {
   }
 });
 
-//npm run cypress:open

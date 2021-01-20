@@ -1,5 +1,5 @@
 //const { describe } = require("mocha");
-import { as } from "./page_functions/add_supplier";
+import { as } from "../page_functions/add_supplier";
 
 //Change the envirenment
 let url = "https://admin-qa.different.com.au/#/add-person";
