@@ -6,7 +6,8 @@
   "scripts": {
     "load-data": "rm -rf ./cypress/fixtures/data.json && node node_modules/excel-data-loader/index.js excel-folder-path=./cypress/data json-file-path=./cypress/fixtures/data.json",
     "start": "npm run load-data && cypress open",
-    "server": "http-server ./sample-app"
+    "server": "http-server ./sample-app",
+    "headless": "cypress run --headless --browser chrome"
   },
   "repository": {
     "type": "git",

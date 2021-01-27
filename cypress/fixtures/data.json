@@ -55,86 +55,53 @@
               "owner_name1": "Test Auto Owner",
               "region": "Western Australia",
               "streettype": "Lane"
-            },
-            {
-              "unit": "Unit",
-              "number1": 50,
-              "number2": 44,
-              "number3": 50,
-              "property_name": "Cypress automation property 05",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press07@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "Australian Capital Territory",
-              "streettype": "Quay"
-            },
-            {
-              "unit": "Suite",
-              "number1": 60,
-              "number2": 45,
-              "number3": 50,
-              "property_name": "Cypress automation property 06",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press08@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "New South Wales",
-              "streettype": "Place"
-            },
-            {
-              "unit": "PO Box",
-              "number1": 70,
-              "number2": 46,
-              "number3": 50,
-              "property_name": "Cypress automation property 07",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press09@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "Northern Territory",
-              "streettype": "Highway"
-            },
-            {
-              "unit": "Lot",
-              "number1": 80,
-              "number2": 47,
-              "number3": 50,
-              "property_name": "Cypress automation property 08",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press10@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "South Australia",
-              "streettype": "Parade"
-            },
-            {
-              "unit": "Unit",
-              "number1": 90,
-              "number2": 48,
-              "number3": 50,
-              "property_name": "Cypress automation property 09",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press11@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "Tasmania",
-              "streettype": "Way"
-            },
-            {
-              "unit": "Suite",
-              "number1": 100,
-              "number2": 49,
-              "number3": 50,
-              "property_name": "Cypress automation property 10",
-              "suburb": "Cypress suburb",
-              "postcode": 5008,
-              "owner_email": "h.milroyperera+press12@gmail.com",
-              "owner_name1": "Test Auto Owner",
-              "region": "Victoria",
-              "streettype": "Crescent"
             }
-          ]
+          ],
+          "sheet2": [
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 700,
+              "lease_type": "Fixed",
+              "bond_amount": 5000,
+              "bond_reference": 456456
+            },
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 701,
+              "lease_type": "Fixed",
+              "bond_amount": 5001,
+              "bond_reference": 456457
+            },
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 702,
+              "lease_type": "Fixed",
+              "bond_amount": 5002,
+              "bond_reference": 456458
+            },
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 703,
+              "lease_type": "Fixed",
+              "bond_amount": 5003,
+              "bond_reference": 456459
+            },
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 704,
+              "lease_type": "Fixed",
+              "bond_amount": 5004,
+              "bond_reference": 456460
+            },
+            {
+              "lease_catagory": "New Lease",
+              "weekly_rent_amount": 705,
+              "lease_type": "Fixed",
+              "bond_amount": 5005,
+              "bond_reference": 456461
+            }
+          ],
+          "sheet3": []
         }
       }
     }

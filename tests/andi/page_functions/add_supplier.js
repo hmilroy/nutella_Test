@@ -1,5 +1,6 @@
 
-  const map = {addpersonbutton: "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(3) > div",
+ /// <reference types="cypress" />
+ const map = {addpersonbutton: "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(3) > div",
   suppliername: "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(1) > input",
   billing_name: "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div > input",  
   billing_email: "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > input",
@@ -78,7 +79,11 @@ export function as(url, supplier) {
     cy.get(map.service_address).type(supplier.service_address);
     cy.get(map.service_phone).type(supplier.service_phone);
     cy.get(map.website).type(supplier.website);
-    cy.get(map.advisory).check({ force: true });
+   // cy.get(map.advisory).check({ force: true });
+      cy.get(map.advisory).check().should('be.checked').and('have.value','on');
+      cy.get(map.advisory).uncheck().should('not.be.checked');
+      cy.get(map.advisory).check().should('be.checked').and('have.value','on');
+
     cy.get(map.callout_fee).type(supplier.callout_fee);
     cy.get(map.emergehcy_call_fee).type(supplier.emergehcy_call_fee);
     cy.get(map.notes).type(supplier.notes);
@@ -87,6 +92,8 @@ export function as(url, supplier) {
     cy.get(map.account_no).type(supplier.account_no);
     cy.get(map.account_holder).type(supplier.account_holder);
     cy.get(map.save_button).click();
+    cy.wait(3000);
+  
 
    // return "value";
 }

@@ -27,6 +27,12 @@ describe("Different Test suite", () => {
       account_no: "42424242",
       account_holder: "Tester",
     });
+    cy.title().should("eq", "Different Admin");
+    cy.on('window:alert', (str) =>
+    {  expect(str).to.equal('INVALID_INPUT:ABN already exists.');
+    })
+
+    //cy.title().should("eq", "Different yyyydmin");
   });
 
   it("Add Supplier scenario 02", () => {
